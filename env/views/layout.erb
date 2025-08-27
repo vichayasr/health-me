@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title><%= @page_title ? "#{@page_title} · HealthMe" : "HealthMe" %></title>
+
+  <link rel="stylesheet" href="/css/tailwind.css" >
+</head>
+<body class="min-h-screen bg-gray-50 text-gray-900">
+<h1>สวัสดีจาก Sinatra</h1>
+<%= erb :head %>
+<main>
+  <%= yield %>
+</main>
+</body>
+</html>
